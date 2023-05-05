@@ -1,0 +1,28 @@
+body {
+  min-height: 100vh;
+  background-color: #F6F1F1;
+  margin: 0;
+}
+
+.logo-puskesmas {
+  margin-left: 50px;
+    width: 32px;
+}
+
+/* content */
+
+.container-content {
+  background-color: #7c7676;
+  padding: 10px 80px;
+}
+
+.isi-hipertensi {
+  width: 400px;
+}
+
+
+
+.container-diagnosa {
+  background-color:#a19e9e;
+
+}

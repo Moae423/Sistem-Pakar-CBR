@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+}
+
+.judul {
+  display: flex;
+  align-items: center;
+}
+
+.instansi, .nav-links li {
+  font-size: 22px;
+  color: #8FBF97;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.nav-links, li, a {
+  color: black;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav-links, li a {
+  transition: all 0.3s ease 0s;
+}
+
+.instansi:hover, .nav-links, li a:hover {
+  color: #B9EDDD;
+  transition: 0.3s;
+}
+
+nav {
+  font-family: "Merriweather", serif;
+  background-color: #01261C;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+}
+
+.nav-links {
+  list-style: none;
+  text-decoration: none;
+  color: #8FBF97;
+}
+
+.logo-puskesmas {
+  margin-left: 50px;
+  width: 32px;
+}
+
+.navbar-nav, li, a {
+  color: #8FBF97;
+}
+
+.container-content {
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.6179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-1.jpg");
+  text-align: center;
+  padding: 14.32em;
+  height: 91.32vh;
+}
+
+.hipertensi {
+  color: #8FBF97;
+  margin-bottom: 10px;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.isi-hipertensi {
+  color: #577D86;
+  font-size: 24px;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+.btn-diagnosa {
+  color: #01261C;
+  background-color: #8FBF97;
+  font-size: 19px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-top: 4em;
+  cursor: pointer;
+}
+
+input[type=text], select {
+  font-size: 40px;
+  width: 100%;
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.title-pd {
+  font-weight: 700;
+  margin-top: 20px;
+  color: #8FBF97;
+  text-align: center;
+}
+
+.container-pd {
+  display: flex;
+  height: 100vh;
+  justify-self: center;
+  align-items: center;
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.6179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-2.jpg");
+  background-size: cover;
+}
+
+.content {
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 2em;
+  background: rgba(1, 38, 28, 0.5179271025);
+  margin: auto;
+  width: 60%;
+  color: #8FBF97;
+  padding: 1em 23% 1em;
+}
+
+input[type=submit], input[type=reset] {
+  color: #01261C;
+  background-color: #8FBF97;
+  font-size: 14px;
+  margin: 0;
+  top: 50%;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  display: inline;
+  justify-content: center;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
