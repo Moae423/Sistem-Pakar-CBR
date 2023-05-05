@@ -4,7 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Pakar Penyakit Hipertensi</title>
+    <title>Sistem Pakar Penyakit Hipertensi</title>
     <meta name="description" content="Description" />
     <meta name="keywords" content="Keywords" />
 
