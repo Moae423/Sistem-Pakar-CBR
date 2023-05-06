@@ -98,8 +98,8 @@ if ($datacek >= 1) {
 		<div class="content-konsul">
 			<form method="post" name="form" target="_self" action="?top=konsulperiksa.php">
 				<h2 class="title-konsul">Pilih Gejala Yang Dialami</h2>
-
-				<td colspan="2"><strong>Form Konsultasi :</strong></td><br>
+				<h3 class="form-konsul">Form Konsultasi :</h3>
+				<!-- <td colspan="2"><strong>Form Konsultasi :</strong></td><br> -->
 
 				<br>
 				<br>
@@ -109,10 +109,11 @@ if ($datacek >= 1) {
 				while ($row = mysqli_fetch_array($query)) {
 					?>
 					<label for="gejala[]">
-						<input type="checkbox" name="gejala[]" id="gejala" value="<?php echo $row['kd_gejala']; ?>">
-						<?php echo $row['gejala']; ?>
-					</label>
-				<?php } ?>
+						<li> <input type="checkbox" name="gejala[]" id="gejala"
+								value="<?php echo $row['kd_gejala']; ?>"><?php echo $row['gejala']; ?></li>
+
+					<?php } ?>
+				</label>
 				<?php
 				if (isset($_POST['gejala1']))
 					echo $_POST['gejala1'] . "<br />";
@@ -144,20 +145,20 @@ if ($datacek >= 1) {
 					echo $_POST['gejala14'] . "<br />";
 				if (isset($_POST['gejala15']))
 					echo $_POST['gejala15'] . "<br />";
-				if (isset($_POST['gejala16']))
-					echo $_POST['gejala16'] . "<br />";
-				if (isset($_POST['gejala17']))
-					echo $_POST['gejala17'] . "<br />";
-				if (isset($_POST['gejala18']))
-					echo $_POST['gejala18'] . "<br />";
-				if (isset($_POST['gejala19']))
-					echo $_POST['gejala19'] . "<br />";
-				if (isset($_POST['gejala20']))
-					echo $_POST['gejala20'] . "<br />";
-				if (isset($_POST['gejala21']))
-					echo $_POST['gejala21'] . "<br />";
-				if (isset($_POST['gejala22']))
-					echo $_POST['gejala212'] . "<br />";
+				// if (isset($_POST['gejala16']))
+				// 	echo $_POST['gejala16'] . "<br />";
+				// if (isset($_POST['gejala17']))
+				// 	echo $_POST['gejala17'] . "<br />";
+				// if (isset($_POST['gejala18']))
+				// 	echo $_POST['gejala18'] . "<br />";
+				// if (isset($_POST['gejala19']))
+				// 	echo $_POST['gejala19'] . "<br />";
+				// if (isset($_POST['gejala20']))
+				// 	echo $_POST['gejala20'] . "<br />";
+				// if (isset($_POST['gejala21']))
+				// 	echo $_POST['gejala21'] . "<br />";
+				// if (isset($_POST['gejala22']))
+				// 	echo $_POST['gejala212'] . "<br />";
 				?>
 				<br>
 				<br>

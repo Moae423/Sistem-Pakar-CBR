@@ -1,7 +1,7 @@
 <div class="art-post">
   <div class="art-post-body">
     <div class="art-post-inner art-article">
-      <h2 class="art-postheader">Daftar Penyakit Hipertensi </h2>
+      <h2 class="title-konsul">Daftar Penyakit Hipertensi </h2>
       <div class="art-postcontent">
         <table width="95%" border="0" align="center" cellpadding="2" cellspacing="1" bgcolor="#22B5DD">
           <td colspan="4"><b>Daftar Penyakit Hipertensi</b></td>

@@ -60,7 +60,7 @@ nav {
 }
 
 .container-content {
-  background: linear-gradient(108deg, rgba(1, 38, 28, 0.6179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-1.jpg");
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-1.jpg");
   text-align: center;
   padding: 14.32em;
   height: 91.32vh;
@@ -118,7 +118,7 @@ label {
   height: 100vh;
   justify-self: center;
   align-items: center;
-  background: linear-gradient(108deg, rgba(1, 38, 28, 0.6179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-2.jpg");
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-2.jpg");
   background-size: cover;
 }
 
@@ -157,20 +157,24 @@ input[type=submit], input[type=reset] {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(108deg, rgba(1, 38, 28, 0.6179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-3.jpg");
+  height: 180vh;
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-3.jpg");
   background-size: cover;
 }
 
 .content-konsul {
+  display: inline-block;
   font-weight: 400;
   font-size: 16px;
   border-radius: 2em;
   background: rgba(1, 38, 28, 0.5179271025);
-  background-color: #01261C;
   margin-top: 20px;
   margin: auto;
-  width: 100%;
+  width: 80%;
   color: #8FBF97;
   padding: 1em 23% 1em;
+}
+
+form {
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */
