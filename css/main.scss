@@ -154,3 +154,35 @@ input[type=submit], input[type=reset] {
   justify-content: center;
   cursor: pointer;
   }
+
+//   KonsultasiFM
+.title-konsul {
+    color: $second-color;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-konsul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    // justify-self: center;
+    // align-items: center;
+    background: linear-gradient(108deg, rgba(1,38,28,0.6179271024816176) 0%, rgba(1,0,94,0.44425763469450286) 100%),url('../images/gambar-3.jpg');
+    background-size: cover; 
+}
+
+.content-konsul {
+    
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 2em;
+    background: rgba(1,38,28,0.5179271024816176);
+    // background-color: #01261C;
+    // margin-top: 20px;
+    // margin: auto;   
+    width: 80%;
+    color: #8FBF97;
+    padding: 1em 23% 1em ;
+}

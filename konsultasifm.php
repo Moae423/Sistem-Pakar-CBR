@@ -90,51 +90,34 @@ if ($datacek >= 1) {
 			//--
 		});
 	</script>
-
-	<!-- <style type="text/css">
-		ul {
-			list-style: none;
-		}
-
-		li {
-			line-height: -6px;
-			font-weight: normal;
-			color: #09F;
-		}
-	</style> -->
+	</style>
 </head>
 
 <body>
-	<div class="konten">
-		<form method="post" name="form" target="_self" action="?top=konsulperiksa.php">
-			<table width="700" border="0" align="center" cellpadding="2" cellspacing="1" bordercolor="#FFFFFF">
+	<div class="container-konsul">
+		<div class="content-konsul">
+			<form method="post" name="form" target="_self" action="?top=konsulperiksa.php">
+				<h2 class="title-konsul">Pilih Gejala Yang Dialami</h2>
+				<!-- <tr>
+				<td colspan="2">
+					<div align="center"><strong>Pilih Gejala Yang Dialami</strong></div>
+				</td>
+			</tr> -->
 				<tr>
-					<td colspan="2">
-						<div align="center"><strong>Pilih Gejala Yang Dialami</strong></div>
-					</td>
+					<td colspan="2"><strong>Form Konsultasi :</strong></td><br>
 				</tr>
-				<tr>
-					<td colspan="2">&nbsp;</td>
-				</tr>
-				<tr>
-					<td colspan="2"><strong>Form Konsultasi :</strong></td>
-				</tr>
-				<tr>
-					<td colspan="2">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="504">
-						<?php
-						include "koneksi.php";
-						$query = mysqli_query($koneksi, "SELECT * FROM gejala") or die("Query Error..!" . mysqli_error($koneksi));
-						while ($row = mysqli_fetch_array($query)) {
-							?>
-							<li><input type="checkbox" name="gejala[]" id="gejala"
-									value="<?php echo $row['kd_gejala']; ?>"><?php echo $row['gejala']; ?></li>
-
-						<?php } ?>
-					</td>
-				</tr>
+				<br>
+				<br>
+				<?php
+				include "koneksi.php";
+				$query = mysqli_query($koneksi, "SELECT * FROM gejala") or die("Query Error..!" . mysqli_error($koneksi));
+				while ($row = mysqli_fetch_array($query)) {
+					?>
+					<label for="gejala[]">
+						<input type="checkbox" name="gejala[]" id="gejala" value="<?php echo $row['kd_gejala']; ?>">
+						<?php echo $row['gejala']; ?>
+					</label>
+				<?php } ?>
 				<?php
 				if (isset($_POST['gejala1']))
 					echo $_POST['gejala1'] . "<br />";
@@ -181,12 +164,11 @@ if ($datacek >= 1) {
 				if (isset($_POST['gejala22']))
 					echo $_POST['gejala212'] . "<br />";
 				?>
-				<tr>
-					<td width="504" align="right" bgcolor="#FFFFFF"><input type="submit" name="Submit"
-							value="Proses Diagnosa"> <input type="reset" value="Reset"></td>
-				</tr>
-			</table>
-		</form>
+
+				<input type="submit" name="Submit" value="Proses Diagnosa">
+				<input type="reset" value="Reset">
+			</form>
+		</div>
 	</div>
 </body>
 

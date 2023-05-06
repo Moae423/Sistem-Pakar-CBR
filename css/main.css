@@ -145,4 +145,29 @@ input[type=submit], input[type=reset] {
   display: inline;
   justify-content: center;
   cursor: pointer;
+}
+
+.title-konsul {
+  color: #8FBF97;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-konsul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.6179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-3.jpg");
+  background-size: cover;
+}
+
+.content-konsul {
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 2em;
+  background: rgba(1, 38, 28, 0.5179271025);
+  width: 80%;
+  color: #8FBF97;
+  padding: 1em 23% 1em;
 }/*# sourceMappingURL=main.css.map */
