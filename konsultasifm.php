@@ -109,8 +109,7 @@ if ($datacek >= 1) {
 				while ($row = mysqli_fetch_array($query)) {
 					?>
 					<label for="gejala[]">
-						<li> <input type="checkbox" name="gejala[]" id="gejala"
-								value="<?php echo $row['kd_gejala']; ?>"><?php echo $row['gejala']; ?></li>
+						<input type="checkbox" name="gejala[]" id="gejala" value="<?php echo $row['kd_gejala']; ?>"><?php echo $row['gejala']; ?>
 
 					<?php } ?>
 				</label>
@@ -145,25 +144,25 @@ if ($datacek >= 1) {
 					echo $_POST['gejala14'] . "<br />";
 				if (isset($_POST['gejala15']))
 					echo $_POST['gejala15'] . "<br />";
-				// if (isset($_POST['gejala16']))
-				// 	echo $_POST['gejala16'] . "<br />";
-				// if (isset($_POST['gejala17']))
-				// 	echo $_POST['gejala17'] . "<br />";
-				// if (isset($_POST['gejala18']))
-				// 	echo $_POST['gejala18'] . "<br />";
-				// if (isset($_POST['gejala19']))
-				// 	echo $_POST['gejala19'] . "<br />";
-				// if (isset($_POST['gejala20']))
-				// 	echo $_POST['gejala20'] . "<br />";
-				// if (isset($_POST['gejala21']))
-				// 	echo $_POST['gejala21'] . "<br />";
-				// if (isset($_POST['gejala22']))
-				// 	echo $_POST['gejala212'] . "<br />";
+				if (isset($_POST['gejala16']))
+					echo $_POST['gejala16'] . "<br />";
+				if (isset($_POST['gejala17']))
+					echo $_POST['gejala17'] . "<br />";
+				if (isset($_POST['gejala18']))
+					echo $_POST['gejala18'] . "<br />";
+				if (isset($_POST['gejala19']))
+					echo $_POST['gejala19'] . "<br />";
+				if (isset($_POST['gejala20']))
+					echo $_POST['gejala20'] . "<br />";
+				if (isset($_POST['gejala21']))
+					echo $_POST['gejala21'] . "<br />";
+				if (isset($_POST['gejala22']))
+					echo $_POST['gejala212'] . "<br />";
 				?>
-				<br>
-				<br>
-				<input type="submit" name="Submit" value="Proses Diagnosa">
-				<input type="reset" value="Reset">
+				<div class="btn-proses">
+					<input type="submit" name="Submit" value="Proses Diagnosa">
+					<input type="reset" value="Reset">
+				</div>
 			</form>
 		</div>
 	</div>

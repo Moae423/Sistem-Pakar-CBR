@@ -16,7 +16,7 @@ $third-color : #577D86;
     align-items: center;
 }
 .instansi, .nav-links li  { 
-    font-size: 22px;
+    font-size: 18px;
     color: $second-color;
 }
 a:link {
@@ -108,8 +108,9 @@ input[type=text], select {
 //     margin-top: 6px;
 //   }
 label {
-    padding-top: 20px;
-    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 0;
+    display: block;
 }
 .title-pd {
     font-weight: 700;
@@ -166,28 +167,27 @@ input[type=submit], input[type=reset] {
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 180vh;
-    // justify-self: center;
-    // align-items: center;
+    height: 100vh;
     background: linear-gradient(108deg, rgba(1,38,28,0.7179271024816176) 0%, rgba(1,0,94,0.44425763469450286) 100%),url('../images/gambar-3.jpg');
     background-size: cover; 
 }
 
 .content-konsul {
-    display: inline-block;
-    
+    padding: 20px 20px 20px;
     font-weight: 400;
     font-size: 16px;
     border-radius: 2em;
     background: rgba(1,38,28,0.5179271024816176);
-    
-    margin-top: 20px;
-    margin: auto;
-    width: 80%;
+    // margin: auto;
+    width: 30%;
     color: #8FBF97;
-    padding: 1em 23% 1em ;
 }
 
-form {
-    display: inline-block;
+.btn-proses {
+    margin-top: 40px;
+    text-align: center;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
 }

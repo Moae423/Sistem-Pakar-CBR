@@ -12,7 +12,7 @@
 }
 
 .instansi, .nav-links li {
-  font-size: 22px;
+  font-size: 18px;
   color: #8FBF97;
 }
 
@@ -102,8 +102,9 @@ input[type=text], select {
 }
 
 label {
-  padding-top: 20px;
-  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 0;
+  display: block;
 }
 
 .title-pd {
@@ -157,24 +158,26 @@ input[type=submit], input[type=reset] {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180vh;
+  height: 100vh;
   background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-3.jpg");
   background-size: cover;
 }
 
 .content-konsul {
-  display: inline-block;
+  padding: 20px 20px 20px;
   font-weight: 400;
   font-size: 16px;
   border-radius: 2em;
   background: rgba(1, 38, 28, 0.5179271025);
-  margin-top: 20px;
-  margin: auto;
-  width: 80%;
+  width: 30%;
   color: #8FBF97;
-  padding: 1em 23% 1em;
 }
 
-form {
-  display: inline-block;
+.btn-proses {
+  margin-top: 40px;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
