@@ -49,9 +49,6 @@
           ?>
         </table>
       </div>
-      <div class="cleared"></div>
     </div>
-
-    <div class="cleared"></div>
   </div>
 </div>
