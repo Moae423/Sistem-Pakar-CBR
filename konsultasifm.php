@@ -164,7 +164,7 @@ if ($datacek >= 1) {
 				if (isset($_POST['gejala22']))
 					echo $_POST['gejala212'] . "<br />";
 				?>
-
+				<br>
 				<input type="submit" name="Submit" value="Proses Diagnosa">
 				<input type="reset" value="Reset">
 			</form>
