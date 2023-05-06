@@ -3,7 +3,7 @@
 		<a href="index.php?top=home.php">
 			<div class="judul">
 				<img class="logo-puskesmas" src="images\logo-puskesmas.png" alt="" class="logo" />
-				<h1 class="instansi ms-auto">PUSKESMAS PADANG LUAR</h1>
+				<h1 class="instansi ms-auto">Puskesmas Padang Luar</h1>
 			</div>
 		</a>
 		<ul class="nav-links">
