@@ -17,7 +17,7 @@
 				<a href="index.php?top=daftar-penyakit.php">Daftar Penyakit</a>
 			</li>
 			<li>
-				<a target="_blank" href="admin/index.php">LogIn</a>
+				<a target="_blank" href="admin/index.php">Log In</a>
 			</li>
 		</ul>
 	</nav>
