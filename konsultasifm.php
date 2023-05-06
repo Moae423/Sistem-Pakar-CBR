@@ -98,14 +98,9 @@ if ($datacek >= 1) {
 		<div class="content-konsul">
 			<form method="post" name="form" target="_self" action="?top=konsulperiksa.php">
 				<h2 class="title-konsul">Pilih Gejala Yang Dialami</h2>
-				<!-- <tr>
-				<td colspan="2">
-					<div align="center"><strong>Pilih Gejala Yang Dialami</strong></div>
-				</td>
-			</tr> -->
-				<tr>
-					<td colspan="2"><strong>Form Konsultasi :</strong></td><br>
-				</tr>
+
+				<td colspan="2"><strong>Form Konsultasi :</strong></td><br>
+
 				<br>
 				<br>
 				<?php
