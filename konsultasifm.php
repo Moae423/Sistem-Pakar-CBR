@@ -58,6 +58,7 @@ if ($datacek >= 1) {
 	<title>Pengisian Gejala</title>
 	<script type="text/javascript" src="jquery-1.2.6.pack.js"></script>
 	<script type="text/javascript">
+		// JavaScript Alert!!
 		$(document).ready(function () {
 			$("form").submit(function () {
 				if (!isCheckedById("gejala")) {
@@ -90,7 +91,7 @@ if ($datacek >= 1) {
 		});
 	</script>
 
-	<style type="text/css">
+	<!-- <style type="text/css">
 		ul {
 			list-style: none;
 		}
@@ -100,7 +101,7 @@ if ($datacek >= 1) {
 			font-weight: normal;
 			color: #09F;
 		}
-	</style>
+	</style> -->
 </head>
 
 <body>

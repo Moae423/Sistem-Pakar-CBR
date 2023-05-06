@@ -16,10 +16,11 @@
     } else if (form.TxtAlamat.value == "") {
       alert("Masukkan alamat anda !");
       form.TxtAlamat.focus(); return false;
-    } else if (form.textemail.value == "") {
-      alert("Masukkan email !");
-      form.textemail.focus(); return false;
     }
+    //  else if (form.textemail.value == "") {
+    //   alert("Masukkan email !");
+    //   form.textemail.focus(); return false;
+    // }
     form.submit();
   }
 </script>
@@ -43,14 +44,14 @@
         <option value="Wanita">Wanita</option>
       </select>
       <!-- Input-umur -->
-      <label for="TxtUmur">Nama</label>
+      <label for="TxtUmur">Umur</label>
       <input name="TxtUmur" id="TxtUmur" type="text" size="2" maxlength="3">
       <!-- Input Alamat -->
       <label for="TxtAlamat">Alamat</label>
       <input name="TxtAlamat" id="TxtAlamat" type="text" size="35" maxlength="60">
-      <!-- input-Email -->
-      <label for="textemail">Nama</label>
-      <td><input type="text" name="textemail" id="textemail" size="25" maxlength="25"></td>
+      <!-- input-Email
+      <label for="textemail">Email</label>
+      <td><input type="text" name="textemail" id="textemail" size="25" maxlength="25"></td> -->
 
       <!-- btn-daftar && btn-reset -->
       <input type="submit" name="Submit" value="Daftar">
