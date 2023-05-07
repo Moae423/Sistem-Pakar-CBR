@@ -70,12 +70,6 @@ select {
   resize: vertical;
 }
 
-label {
-  padding-top: 10px;
-  padding-bottom: 0;
-  display: block;
-}
-
 .title-pd {
   font-weight: 700;
   margin-top: 20px;
@@ -108,13 +102,9 @@ input[type=reset] {
   color: #01261C;
   background-color: #8FBF97;
   font-size: 14px;
-  margin: 0;
-  top: 50%;
   border-style: none;
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
-  display: inline;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -134,20 +124,45 @@ input[type=reset] {
 }
 
 .content-konsul {
-  padding: 20px 20px 20px;
+  padding: 10px 20px 10px;
   font-weight: 400;
   font-size: 16px;
   border-radius: 2em;
   background: rgba(1, 38, 28, 0.5179271025);
-  width: 30%;
+  margin: 7em 0 0 0;
+  width: 35%;
   color: #8FBF97;
 }
 
-.btn-proses {
-  margin-top: 40px;
+.label-gejala {
+  display: block;
+}
+
+.btn-proses, .proses {
   text-align: center;
 }
 
 input[type=checkbox] {
   margin-right: 10px;
+}
+
+.h-pd-judul {
+  color: #577D86;
+}
+
+.h-pd-container {
+  display: block;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 40px;
+}
+
+.h-pd-content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid green;
+  padding: 40px;
 }/*# sourceMappingURL=main.css.map */

@@ -52,20 +52,20 @@
 	</div>
 </nav> -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ">
 	<div class="container">
-		<a class="puskesmas fs-3" href="#">
+		<a class="puskesmas fs-2" href="#">
 			<img src="images\logo-puskesmas.png" alt="Logo" width="30" height="30"
 				class="d-inline-block align-text-top" />
 			Puskesmas Padang Luar
 		</a>
-		<button type="button" class="navbar-toggler" data-bs-target="#navbarnav" data-bs-toggle="collapse"
+		<button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
 			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<div class="mx-auto"></div>
-			<ul class="navbar-nav fs-2 gap-5">
+			<ul class="navbar-nav fs-2 gap-5 mr-auto">
 				<li class="nav-item">
 					<a href="index.php?top=home.php" class="nav-ateh">Home</a>
 				</li>

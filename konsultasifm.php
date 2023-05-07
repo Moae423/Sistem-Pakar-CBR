@@ -108,60 +108,65 @@ if ($datacek >= 1) {
 				$query = mysqli_query($koneksi, "SELECT * FROM gejala") or die("Query Error..!" . mysqli_error($koneksi));
 				while ($row = mysqli_fetch_array($query)) {
 					?>
-					<label for="gejala[]">
+					<div class="label-gejala">
+						<!-- <label for="gejala[]"> -->
 						<input type="checkbox" name="gejala[]" id="gejala" value="<?php echo $row['kd_gejala']; ?>"><?php echo $row['gejala']; ?>
 
 					<?php } ?>
-				</label>
-				<?php
-				if (isset($_POST['gejala1']))
-					echo $_POST['gejala1'] . "<br />";
-				if (isset($_POST['gejala2']))
-					echo $_POST['gejala2'] . "<br />";
-				if (isset($_POST['gejala3']))
-					echo $_POST['gejala3'] . "<br />";
-				if (isset($_POST['gejala4']))
-					echo $_POST['gejala4'] . "<br />";
-				if (isset($_POST['gejala5']))
-					echo $_POST['gejala5'] . "<br />";
-				if (isset($_POST['gejala6']))
-					echo $_POST['gejala6'] . "<br />";
-				if (isset($_POST['gejala7']))
-					echo $_POST['gejala7'] . "<br />";
-				if (isset($_POST['gejala8']))
-					echo $_POST['gejala8'] . "<br />";
-				if (isset($_POST['gejala9']))
-					echo $_POST['gejala9'] . "<br />";
-				if (isset($_POST['gejala10']))
-					echo $_POST['gejala10'] . "<br />";
-				if (isset($_POST['gejala11']))
-					echo $_POST['gejala11'] . "<br />";
-				if (isset($_POST['gejala12']))
-					echo $_POST['gejala12'] . "<br />";
-				if (isset($_POST['gejala13']))
-					echo $_POST['gejala13'] . "<br />";
-				if (isset($_POST['gejala14']))
-					echo $_POST['gejala14'] . "<br />";
-				if (isset($_POST['gejala15']))
-					echo $_POST['gejala15'] . "<br />";
-				if (isset($_POST['gejala16']))
-					echo $_POST['gejala16'] . "<br />";
-				if (isset($_POST['gejala17']))
-					echo $_POST['gejala17'] . "<br />";
-				if (isset($_POST['gejala18']))
-					echo $_POST['gejala18'] . "<br />";
-				if (isset($_POST['gejala19']))
-					echo $_POST['gejala19'] . "<br />";
-				if (isset($_POST['gejala20']))
-					echo $_POST['gejala20'] . "<br />";
-				if (isset($_POST['gejala21']))
-					echo $_POST['gejala21'] . "<br />";
-				if (isset($_POST['gejala22']))
-					echo $_POST['gejala212'] . "<br />";
-				?>
-				<div class="btn-proses">
-					<input type="submit" name="Submit" value="Proses Diagnosa">
-					<input type="reset" value="Reset">
+
+					<?php
+					if (isset($_POST['gejala1']))
+						echo $_POST['gejala1'] . "<br />";
+					if (isset($_POST['gejala2']))
+						echo $_POST['gejala2'] . "<br />";
+					if (isset($_POST['gejala3']))
+						echo $_POST['gejala3'] . "<br />";
+					if (isset($_POST['gejala4']))
+						echo $_POST['gejala4'] . "<br />";
+					if (isset($_POST['gejala5']))
+						echo $_POST['gejala5'] . "<br />";
+					if (isset($_POST['gejala6']))
+						echo $_POST['gejala6'] . "<br />";
+					if (isset($_POST['gejala7']))
+						echo $_POST['gejala7'] . "<br />";
+					if (isset($_POST['gejala8']))
+						echo $_POST['gejala8'] . "<br />";
+					if (isset($_POST['gejala9']))
+						echo $_POST['gejala9'] . "<br />";
+					if (isset($_POST['gejala10']))
+						echo $_POST['gejala10'] . "<br />";
+					if (isset($_POST['gejala11']))
+						echo $_POST['gejala11'] . "<br />";
+					if (isset($_POST['gejala12']))
+						echo $_POST['gejala12'] . "<br />";
+					if (isset($_POST['gejala13']))
+						echo $_POST['gejala13'] . "<br />";
+					if (isset($_POST['gejala14']))
+						echo $_POST['gejala14'] . "<br />";
+					if (isset($_POST['gejala15']))
+						echo $_POST['gejala15'] . "<br />";
+					if (isset($_POST['gejala16']))
+						echo $_POST['gejala16'] . "<br />";
+					if (isset($_POST['gejala17']))
+						echo $_POST['gejala17'] . "<br />";
+					if (isset($_POST['gejala18']))
+						echo $_POST['gejala18'] . "<br />";
+					if (isset($_POST['gejala19']))
+						echo $_POST['gejala19'] . "<br />";
+					if (isset($_POST['gejala20']))
+						echo $_POST['gejala20'] . "<br />";
+					if (isset($_POST['gejala21']))
+						echo $_POST['gejala21'] . "<br />";
+					if (isset($_POST['gejala22']))
+						echo $_POST['gejala22'] . "<br />";
+					?>
+					<!-- </label> -->
+				</div>
+				<div class="proses">
+					<div class="btn-proses">
+						<input type="submit" name="Submit" value="Proses Diagnosa">
+						<input type="reset" value="Reset">
+					</div>
 				</div>
 			</form>
 		</div>
