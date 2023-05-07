@@ -11,30 +11,43 @@ $third-color : #577D86;
     font-family: 'Merriweather', serif;
     // background-color: #577D86;
 }
+
 .judul {
     display: flex;
     align-items: center;
 }
-.instansi, .nav-links li  { 
+
+.instansi,
+.nav-links li {
     font-size: 18px;
     color: $second-color;
 }
+
 a:link {
     text-decoration: none;
 }
-.nav-links, li, a  {
+
+.nav-links,
+li,
+a {
     color: black;
     display: inline-block;
     padding: 0 10px;
-    
+
 }
-.nav-links, li a {
+
+.nav-links,
+li a {
     transition: all 0.3s ease 0s;
 }
-.instansi:hover,.nav-links, li a:hover {
+
+.instansi:hover,
+.nav-links,
+li a:hover {
     color: #B9EDDD;
     transition: 0.3s;
 }
+
 nav {
     font-family: 'Merriweather', serif;
     background-color: $primary-color;
@@ -43,28 +56,33 @@ nav {
     justify-content: space-between;
     padding: 20px 5%;
 }
+
 .nav-links {
     list-style: none;
     text-decoration: none;
     color: #8FBF97;
 }
-  .logo-puskesmas {
-    margin-left: 50px;
-      width: 32px;
-  }
 
-.navbar-nav, li, a {
+.logo-puskesmas {
+    margin-left: 50px;
+    width: 32px;
+}
+
+.navbar-nav,
+li,
+a {
     color: $second-color;
-} 
+}
 
 // home
 
-.container-content{
-    background: linear-gradient(108deg, rgba(1,38,28,0.7179271024816176) 0%, rgba(1,0,94,0.44425763469450286) 91%),url('../images/gambar-1.jpg'); 
+.container-content {
+    background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 91%), url('../images/gambar-1.jpg');
     text-align: center;
     padding: 14.32em;
     height: 91.32vh;
 }
+
 .hipertensi {
     color: #8FBF97;
     margin-bottom: 10px;
@@ -80,7 +98,7 @@ nav {
 }
 
 // button diagnosa
- .btn-diagnosa  {
+.btn-diagnosa {
     color: $primary-color;
     background-color: $second-color;
     font-size: 19px;
@@ -93,15 +111,17 @@ nav {
 
 
 // proses diagnosa
-input[type=text], select {
-  width: 100%;
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+input[type=text],
+select {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
+
 // .col-25 {
 //     float: left;
 //     width: 25%;
@@ -112,20 +132,22 @@ label {
     padding-bottom: 0;
     display: block;
 }
+
 .title-pd {
     font-weight: 700;
     margin-top: 20px;
     color: #8FBF97;
     text-align: center;
 }
+
 .container-pd {
     display: flex;
     height: 100vh;
     justify-self: center;
     align-items: center;
-    background: linear-gradient(108deg, rgba(1,38,28,0.7179271024816176) 0%, rgba(1,0,94,0.44425763469450286) 91%),url('../images/gambar-2.jpg');
-    background-size: cover; 
-// background-color: $primary-color;
+    background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 91%), url('../images/gambar-2.jpg');
+    background-size: cover;
+    // background-color: $primary-color;
 }
 
 
@@ -133,28 +155,29 @@ label {
     font-weight: 400;
     font-size: 16px;
     border-radius: 2em;
-    background: rgba(1,38,28,0.5179271024816176);
+    background: rgba(1, 38, 28, 0.5179271024816176);
     // background-color: #01261C;
     // margin-top: 20px;
-    margin: auto;   
+    margin: auto;
     width: 60%;
     color: #8FBF97;
-    padding: 1em 23% 1em ;
+    padding: 1em 23% 1em;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit],
+input[type=reset] {
     color: #01261C;
-  background-color: #8FBF97;
-  font-size: 14px;
-  margin: 0;
-  top: 50%;
-  border-style: none;
-  border-radius: 5px;
-  padding: 10px 10px 10px 10px;
-  display:inline;
-  justify-content: center;
-  cursor: pointer;
-  }
+    background-color: #8FBF97;
+    font-size: 14px;
+    margin: 0;
+    top: 50%;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    display: inline;
+    justify-content: center;
+    cursor: pointer;
+}
 
 //   KonsultasiFM
 .title-konsul {
@@ -164,12 +187,12 @@ input[type=submit], input[type=reset] {
 }
 
 .container-konsul {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(108deg, rgba(1,38,28,0.7179271024816176) 0%, rgba(1,0,94,0.44425763469450286) 100%),url('../images/gambar-3.jpg');
-    background-size: cover; 
+    background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 100%), url('../images/gambar-3.jpg');
+    background-size: cover;
 }
 
 .content-konsul {
@@ -177,7 +200,7 @@ input[type=submit], input[type=reset] {
     font-weight: 400;
     font-size: 16px;
     border-radius: 2em;
-    background: rgba(1,38,28,0.5179271024816176);
+    background: rgba(1, 38, 28, 0.5179271024816176);
     // margin: auto;
     width: 30%;
     color: #8FBF97;
