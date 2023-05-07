@@ -11,59 +11,19 @@
   align-items: center;
 }
 
-.instansi,
-.nav-links li {
-  font-size: 18px;
-  color: #8FBF97;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-.nav-links,
-li,
-a {
-  color: black;
-  display: inline-block;
-  padding: 0 10px;
-}
-
-.nav-links,
-li a {
-  transition: all 0.3s ease 0s;
-}
-
-.instansi:hover,
-.nav-links,
-li a:hover {
-  color: #B9EDDD;
-  transition: 0.3s;
-}
-
 nav {
-  font-family: "Merriweather", serif;
-  background-color: #01261C;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 5%;
+  color: aqua;
 }
 
-.nav-links {
-  list-style: none;
+.puskesmas {
   text-decoration: none;
+  font-weight: 700;
   color: #8FBF97;
 }
 
-.logo-puskesmas {
-  margin-left: 50px;
-  width: 32px;
-}
-
-.navbar-nav,
-li,
-a {
+.nav-ateh {
+  text-decoration: none;
+  font-weight: 400;
   color: #8FBF97;
 }
 
@@ -71,7 +31,7 @@ a {
   background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-1.jpg");
   text-align: center;
   padding: 14.32em;
-  height: 91.32vh;
+  height: 100vh;
 }
 
 .hipertensi {

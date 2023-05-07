@@ -29,7 +29,7 @@
 
 <body style="margin-top: 30px;">
   <img src="images/LogoPuskesmas.webp" alt="">
-  <table width="310" border="0" align="center">
+  <table width="310" border="3" align="center">
     <tr>
       <!-- <td height><img src="../images/headerunggas2.jpg"></td> -->
     </tr>

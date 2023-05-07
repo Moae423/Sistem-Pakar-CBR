@@ -17,62 +17,82 @@ $third-color : #577D86;
     align-items: center;
 }
 
-.instansi,
-.nav-links li {
-    font-size: 18px;
+
+nav {
+    color: aqua;
+}
+
+.puskesmas {
+    text-decoration: none;
+    font-weight: 700;
     color: $second-color;
 }
 
-a:link {
+.nav-ateh {
     text-decoration: none;
-}
-
-.nav-links,
-li,
-a {
-    color: black;
-    display: inline-block;
-    padding: 0 10px;
-
-}
-
-.nav-links,
-li a {
-    transition: all 0.3s ease 0s;
-}
-
-.instansi:hover,
-.nav-links,
-li a:hover {
-    color: #B9EDDD;
-    transition: 0.3s;
-}
-
-nav {
-    font-family: 'Merriweather', serif;
-    background-color: $primary-color;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 5%;
-}
-
-.nav-links {
-    list-style: none;
-    text-decoration: none;
+    font-weight: 400;
     color: #8FBF97;
 }
 
-.logo-puskesmas {
-    margin-left: 50px;
-    width: 32px;
-}
 
-.navbar-nav,
-li,
-a {
-    color: $second-color;
-}
+
+
+// .instansi,
+// .nav-links li {
+//     font-size: 18px;
+//     color: $second-color;
+// }
+
+// a:link {
+//     text-decoration: none;
+// }
+
+// .nav-links,
+// li,
+// a {
+//     color: black;
+//     display: inline-block;
+//     padding: 0 10px;
+
+// }
+
+// .nav-links,
+// li a {
+//     transition: all 0.3s ease 0s;
+// }
+
+// .instansi:hover,
+// .nav-links,
+// li a:hover {
+//     color: #B9EDDD;
+//     transition: 0.3s;
+// }
+
+// nav {
+//     font-family: 'Merriweather', serif;
+//     background-color: $primary-color;
+//     list-style: none;
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 20px 5%;
+// }
+
+// .nav-links {
+//     list-style: none;
+//     text-decoration: none;
+//     color: #8FBF97;
+// }
+
+// .logo-puskesmas {
+//     margin-left: 50px;
+//     width: 32px;
+// }
+
+// .navbar-nav,
+// li,
+// a {
+//     color: $second-color;
+// }
 
 // home
 
@@ -80,7 +100,8 @@ a {
     background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 91%), url('../images/gambar-1.jpg');
     text-align: center;
     padding: 14.32em;
-    height: 91.32vh;
+    // height: 91.32vh;
+    height: 100vh;
 }
 
 .hipertensi {
