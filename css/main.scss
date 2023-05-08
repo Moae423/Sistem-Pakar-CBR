@@ -242,15 +242,14 @@ input[type=checkbox] {
 }
 
 .h-pd-container {
+    // background: rgba(1, 38, 28, 0.5179271024816176);
+
     display: block;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-  width: 50%;
   padding: 40px;
 }
 .h-pd-content {
-    width: 100%;
+    width: 50%;
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
   border: 3px solid green;
