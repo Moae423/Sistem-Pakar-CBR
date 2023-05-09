@@ -180,14 +180,25 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
+a:link {
+  color: #005B52;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: 300ms;
+  color: #ccc;
+  background-color: transparent;
+}
+
 .h-pd-btn-kembali {
-  list-style: none;
   background-color: #005B52;
   font-size: 15px;
   border-style: none;
   border-radius: 5px;
   padding: 10px 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .h-pd-btn {

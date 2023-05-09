@@ -184,13 +184,13 @@
 							<strong style="color: #DBF227">Hasil Diagnosa :</strong><br />
 							<?php
 							echo "<p>" . "<strong style=color:#D6D58E>Dilihat dari hasil persentase setiap penyakit yang tertera, Pasien terjangkit penyakit " . $row_penyasol['nama_penyakit'] . " sebesar " . $persen . " % </p></strong>";
-							echo "<p>" . "<strong style=color:#DBF227>Solusi Pengobatan :</strong><br><br> " . "<strong style=color:#D6D58E>" . $row_penyasol['solusi'] . "</p><hr>";
+							echo "<p>" . "<strong style=color:#DBF227>Solusi Pengobatan :</strong><br><br> " . "<strong style=color:#D6D58E>" . $row_penyasol['solusi'] . "</p></strong><hr>";
 						}
 					}
 
 					?>
 					<div class="h-pd-btn">
-						<button class="h-pd-btn-diagnosa">
+						<button class="h-pd-btn-diagnosa fs-5 link-info">
 							<a href="index.php?top=konsultasiFm.php">Diagnosa Kembali</a>
 						</button>
 

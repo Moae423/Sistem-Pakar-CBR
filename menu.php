@@ -57,7 +57,9 @@
 		<a class="puskesmas fs-2" href="#">
 			<img src="images\logo-puskesmas.png" alt="Logo" width="30" height="30"
 				class="d-inline-block align-text-top" />
-			Puskesmas Padang Luar
+			<a href="index.php?top=home.php	" class="puskesmas fs-2">
+				Puskesmas Padang Luar
+			</a>
 		</a>
 		<button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
 			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
