@@ -101,12 +101,6 @@
 				}
 				echo "</div>";
 				?>
-
-				<!-- Identitas Pemilik dan Gejala yng diinput -->
-				<!-- <table width="500" border="3" bgcolor="#0099FF" cellspacing="1" cellpadding="4" bordercolor="#0099FF">
-		<tr bgcolor="#ffffff">
-
-			<td height="32"> -->
 				<strong style="color:#C60;">Identitas Pemilik :</strong><br /><br />
 				<?php
 				include "koneksi.php";
@@ -132,7 +126,7 @@
 				<tr bgcolor="#FFFFFF">
 
 					<!-- Persentasi Penyakit -->
-					<td><strong style="color:#C60;">Persentase Setiap Penyakit :</strong><br /> <br>
+					<td><strong style="color:#8FBF97;">Persentase Setiap Penyakit :</strong><br /> <br>
 						<?php
 
 						//mencari persen
@@ -188,7 +182,7 @@
 								<strong>Hasil Diagnosa :</strong><br />
 								<?php
 								echo "<p>" . "<strong>Dilihat dari hasil persentase setiap penyakit yang tertera, Pasien terjangkit penyakit " . $row_penyasol['nama_penyakit'] . " sebesar " . $persen . " % </p></strong>";
-								echo "<p>" . "<strong style=color:#C60>Solusi Pengobatan :</strong><br><br> " . $row_penyasol['solusi'] . "</p><hr>";
+								echo "<p>" . "<strong style=color:##8FBF97>Solusi Pengobatan :</strong><br><br> " . $row_penyasol['solusi'] . "</p><hr>";
 							}
 						}
 
