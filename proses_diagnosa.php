@@ -9,7 +9,7 @@
 
 <body>
 	<div class="h-pd-container  ">
-		<div class="h-pd-content  ">
+		<div class="h-pd-content shadow p-3 mb-5 ">
 			<div class="h-pd-diagnosa">
 				<h1 class="h-pd-judul mb-5">Hasil Diagnosa</h1>
 				<?php
