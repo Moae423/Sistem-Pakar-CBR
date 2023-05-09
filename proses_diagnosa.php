@@ -11,7 +11,7 @@
 	<div class="h-pd-container  ">
 		<div class="h-pd-content  ">
 			<div class="h-pd-diagnosa">
-				<h1 class="h-pd-judul">hasil Diagnosa</h1>
+				<h1 class="h-pd-judul">hasil Diagnasdasdosa</h1>
 				<?php
 				include "koneksi.php";
 
