@@ -11,7 +11,7 @@
 	<div class="h-pd-container  ">
 		<div class="h-pd-content  ">
 			<div class="h-pd-diagnosa">
-				<h1 class="h-pd-judul">hasil Diagnasdasdosa</h1>
+				<h1 class="h-pd-judul mb-5">Hasil Diagnosa</h1>
 				<?php
 				include "koneksi.php";
 
@@ -101,95 +101,103 @@
 				}
 				echo "</div>";
 				?>
-				<strong style="color:#C60;">Identitas Pemilik :</strong><br /><br />
+				<strong style="color:#9FC131; font-weight: 900;">hasil diagnosa menunjukkan bahwa Pasien
+					:</strong><br /><br />
 				<?php
 				include "koneksi.php";
 				$query_pasien = mysqli_query($koneksi, "SELECT * FROM tmp_pasien ORDER BY id DESC");
 				$data_pasien = mysqli_fetch_array($query_pasien);
-				echo "Nama : " . $data_pasien['nama'] . "<br>";
+				echo "<strong style=color:#D6D58E> Nama  : " . $data_pasien['nama'] . "<br>";
 				echo "Jenis Kelamin : " . $data_pasien['kelamin'] . "<br>";
 				echo "Umur : " . $data_pasien['umur'] . "<br>";
-				echo "Alamat : " . $data_pasien['alamat'] . "<br><br>"; ?>
-				<label style="color:#C60;"><b>Gejala yang diinputkan oleh pemilik : </b></label><br>
+				echo "Alamat : " . $data_pasien['alamat'] . "</strong><br><br>"; ?>
+				<label class="input-gejala fs-3" style="color:#9FC131	;"><b>Gejala yang diinputkan oleh pemilik :
+					</b></label><br>
 				<?php
 				$query_gejala_input = mysqli_query($koneksi, "SELECT gejala.gejala AS namagejala,tmp_gejala.kd_gejala FROM gejala,tmp_gejala WHERE tmp_gejala.kd_gejala=gejala.kd_gejala");
 				$nogejala = 0;
 				while ($row_gejala_input = mysqli_fetch_array($query_gejala_input)) {
+					echo "<strong style=color:#D6D58E>";
 					$nogejala++;
-					echo $nogejala . "." . $row_gejala_input['namagejala'] . "<br>";
+					echo $nogejala . "." . $row_gejala_input['namagejala'] . "</strong><br>";
 				}
 				?>
 				<p></p>
 				</td>
 				</tr>
 
-				<tr bgcolor="#FFFFFF">
+				<!-- Persentasi Penyakit -->
+				<td>
+					<h5 class="font-weight-bold" style="color:#9FC131;">Persentase Setiap Penyakit :</h5><br /> <br>
+					<?php
 
-					<!-- Persentasi Penyakit -->
-					<td><strong style="color:#8FBF97;">Persentase Setiap Penyakit :</strong><br /> <br>
-						<?php
+					//mencari persen
+					$query_nilai = mysqli_query($koneksi, "SELECT SUM(nilai) as nilaiSum FROM tmp_penyakit");
+					$rowSUM = mysqli_fetch_array($query_nilai);
+					$nilaiTotal = $rowSUM['nilaiSum'];
+					// echo $nilaiTotal."<br>";
+					
+					$query_sum_tmp = mysqli_query($koneksi, "SELECT * FROM tmp_penyakit  ORDER BY nilai DESC LIMIT 0,6");
+					while ($row_sumtmp = mysqli_fetch_array($query_sum_tmp)) {
+						$nilai = $row_sumtmp['nilai'];
+						$nilai_persen = $nilai;
+						$data_persen = $nilai_persen * 100;
+						$persen = substr($data_persen, 0, 5);
+						// echo $persen."<br>";
+						$kd_pen2 = $row_sumtmp['kd_penyakit'];
 
-						//mencari persen
-						$query_nilai = mysqli_query($koneksi, "SELECT SUM(nilai) as nilaiSum FROM tmp_penyakit");
-						$rowSUM = mysqli_fetch_array($query_nilai);
-						$nilaiTotal = $rowSUM['nilaiSum'];
-						// echo $nilaiTotal."<br>";
-						
-						$query_sum_tmp = mysqli_query($koneksi, "SELECT * FROM tmp_penyakit  ORDER BY nilai DESC LIMIT 0,6");
-						while ($row_sumtmp = mysqli_fetch_array($query_sum_tmp)) {
-							$nilai = $row_sumtmp['nilai'];
-							$nilai_persen = $nilai;
-							$data_persen = $nilai_persen * 100;
-							$persen = substr($data_persen, 0, 5);
-							// echo $persen."<br>";
-							$kd_pen2 = $row_sumtmp['kd_penyakit'];
+						$query_penyasol = mysqli_query($koneksi, "SELECT * FROM penyakit_solusi WHERE kd_penyakit='$kd_pen2'");
+						while ($row_penyasol = mysqli_fetch_array($query_penyasol)) {
+							echo "<strong style=color:#D6D58E>Persentase Pasien Menderita Penyakit " . $row_penyasol['nama_penyakit'] . " Sebesar " . $persen . "%" . "<br></strong>";
 
-							$query_penyasol = mysqli_query($koneksi, "SELECT * FROM penyakit_solusi WHERE kd_penyakit='$kd_pen2'");
-							while ($row_penyasol = mysqli_fetch_array($query_penyasol)) {
-								echo "Persentase Pasien Menderita Penyakit " . $row_penyasol['nama_penyakit'] . " Sebesar " . $persen . "%" . "<br>";
-
-								// simpan data
-								$query_temp = mysqli_query($koneksi, "SELECT * FROM tmp_pasien ORDER BY id DESC") or die(mysqli_error($koneksi));
-								$row_pasien = mysqli_fetch_array($query_temp) or die(mysqli_error($koneksi));
-								$nama = $row_pasien['nama'];
-								$kelamin = $row_pasien['kelamin'];
-								$umur = $row_pasien['umur'];
-								$alamat = $row_pasien['alamat'];
-								$tanggal = $row_pasien['tanggal'];
-								$query_hasil2 = "INSERT INTO analisa_hasil(nama,kelamin,umur,alamat,kd_penyakit,tanggal) VALUES ('$nama','$kelamin','$umur','$alamat','$kd_pen2','$tanggal')";
-								$res_hasil2 = mysqli_query($koneksi, $query_hasil2) or die(mysqli_error($koneksi));
-								if ($res_hasil2) {
-									echo "";
-								} else {
-									echo "<font color='#FF0000'>Data tidak dapat disimpan..!</font><br>";
-								}
-							}
-						} //end while
-						echo "<hr>";
-
-						$query_kesimpulan_akhir = mysqli_query($koneksi, "SELECT * FROM tmp_penyakit  ORDER BY nilai DESC LIMIT 0,1");
-						while ($row_sumtmp = mysqli_fetch_array($query_kesimpulan_akhir)) {
-							$nilai = $row_sumtmp['nilai'];
-							$nilai_persen = $nilai;
-							$data_persen = $nilai_persen * 100;
-							$persen = substr($data_persen, 0, 5);
-							$kd_pen2 = $row_sumtmp['kd_penyakit'];
-
-							$query_penyasol = mysqli_query($koneksi, "SELECT * FROM penyakit_solusi WHERE kd_penyakit='$kd_pen2'");
-							while ($row_penyasol = mysqli_fetch_array($query_penyasol)) {
-								//Kesimpulan
-								?>
-								<strong>Hasil Diagnosa :</strong><br />
-								<?php
-								echo "<p>" . "<strong>Dilihat dari hasil persentase setiap penyakit yang tertera, Pasien terjangkit penyakit " . $row_penyasol['nama_penyakit'] . " sebesar " . $persen . " % </p></strong>";
-								echo "<p>" . "<strong style=color:##8FBF97>Solusi Pengobatan :</strong><br><br> " . $row_penyasol['solusi'] . "</p><hr>";
+							// simpan data
+							$query_temp = mysqli_query($koneksi, "SELECT * FROM tmp_pasien ORDER BY id DESC") or die(mysqli_error($koneksi));
+							$row_pasien = mysqli_fetch_array($query_temp) or die(mysqli_error($koneksi));
+							$nama = $row_pasien['nama'];
+							$kelamin = $row_pasien['kelamin'];
+							$umur = $row_pasien['umur'];
+							$alamat = $row_pasien['alamat'];
+							$tanggal = $row_pasien['tanggal'];
+							$query_hasil2 = "INSERT INTO analisa_hasil(nama,kelamin,umur,alamat,kd_penyakit,tanggal) VALUES ('$nama','$kelamin','$umur','$alamat','$kd_pen2','$tanggal')";
+							$res_hasil2 = mysqli_query($koneksi, $query_hasil2) or die(mysqli_error($koneksi));
+							if ($res_hasil2) {
+								echo "";
+							} else {
+								echo "<font color='#FF0000'>Data tidak dapat disimpan..!</font><br>";
 							}
 						}
+					} //end while
+					echo "<hr>";
 
-						?>
+					$query_kesimpulan_akhir = mysqli_query($koneksi, "SELECT * FROM tmp_penyakit  ORDER BY nilai DESC LIMIT 0,1");
+					while ($row_sumtmp = mysqli_fetch_array($query_kesimpulan_akhir)) {
+						$nilai = $row_sumtmp['nilai'];
+						$nilai_persen = $nilai;
+						$data_persen = $nilai_persen * 100;
+						$persen = substr($data_persen, 0, 5);
+						$kd_pen2 = $row_sumtmp['kd_penyakit'];
 
-						<a href="index.php?top=konsultasiFm.php">Diagnosa Kembali</a><br />
-						<a href="index.php?top=pasien_add_fm.php">Kembali</a>
+						$query_penyasol = mysqli_query($koneksi, "SELECT * FROM penyakit_solusi WHERE kd_penyakit='$kd_pen2'");
+						while ($row_penyasol = mysqli_fetch_array($query_penyasol)) {
+							//Kesimpulan
+							?>
+							<strong style="color: #DBF227">Hasil Diagnosa :</strong><br />
+							<?php
+							echo "<p>" . "<strong style=color:#D6D58E>Dilihat dari hasil persentase setiap penyakit yang tertera, Pasien terjangkit penyakit " . $row_penyasol['nama_penyakit'] . " sebesar " . $persen . " % </p></strong>";
+							echo "<p>" . "<strong style=color:#DBF227>Solusi Pengobatan :</strong><br><br> " . "<strong style=color:#D6D58E>" . $row_penyasol['solusi'] . "</p><hr>";
+						}
+					}
+
+					?>
+					<div class="h-pd-btn">
+						<button class="h-pd-btn-diagnosa">
+							<a href="index.php?top=konsultasiFm.php">Diagnosa Kembali</a>
+						</button>
+
+						<button class="h-pd-btn-kembali">
+							<a href="index.php?top=pasien_add_fm.php">Kembali</a>
+						</button>
+					</div>
 			</div>
 		</div>
 	</div>

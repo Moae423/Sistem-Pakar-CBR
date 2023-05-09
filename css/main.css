@@ -147,20 +147,55 @@ input[type=checkbox] {
 }
 
 .h-pd-judul {
-  color: #577D86;
+  font-weight: 900;
+  color: #D6D58E;
+  text-align: center;
 }
 
 .h-pd-container {
-  display: block;
-  height: 100vh;
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-4.jpg");
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
 
 .h-pd-content {
-  width: 50%;
+  border-radius: 20px;
+  background-color: rgba(4, 41, 64, 0.6);
+  width: 46%;
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid green;
-  padding: 40px;
+  padding: 40px 40px 60px 40px;
+}
+
+.h-pd-btn-diagnosa {
+  background-color: #005B52;
+  font-size: 15px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.h-pd-btn-kembali {
+  list-style: none;
+  background-color: #005B52;
+  font-size: 15px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.h-pd-btn {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
