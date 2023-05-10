@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
-$primary-color : #01261C;
+$bg-color: #005B52;
 $second-color : #8FBF97;
 $third-color : #577D86;
 $nav-color : #DBF226;
@@ -15,79 +15,25 @@ $fs-color : #9FC131;
     // background-color: #577D86;
 }
 
+label {
+    color: $font-color;
+}
 .judul {
     display: flex;
     align-items: center;
 }
 
-
-nav {
-    color: aqua;
-}
-
 .puskesmas {
     text-decoration: none;
     font-weight: 700;
-    color: $second-color;
+    color: $nav-color;
 }
 
 .nav-ateh {
     text-decoration: none;
     font-weight: 400;
-    color: #8FBF97;
+    color: $nav-color;
 }
-
-
-
-
-// .instansi,
-// .nav-links li {
-//     font-size: 18px;
-//     color: $second-color;
-// }
-
-// a:link {
-//     text-decoration: none;
-// }
-
-// .nav-links,
-// li,
-// a {
-//     color: black;
-//     display: inline-block;
-//     padding: 0 10px;
-
-// }
-
-// .nav-links,
-// li a {
-//     transition: all 0.3s ease 0s;
-// }
-
-// .instansi:hover,
-// .nav-links,
-// li a:hover {
-//     color: #B9EDDD;
-//     transition: 0.3s;
-// }
-
-
-// .nav-links {
-//     list-style: none;
-//     text-decoration: none;
-//     color: #8FBF97;
-// }
-
-// .logo-puskesmas {
-//     margin-left: 50px;
-//     width: 32px;
-// }
-
-// .navbar-nav,
-// li,
-// a {
-//     color: $second-color;
-// }
 
 // home
 
@@ -115,8 +61,8 @@ nav {
 
 // button diagnosa
 .btn-diagnosa {
-    color: $primary-color;
-    background-color: $second-color;
+    color: $font-color;
+    background-color: #005B52;
     font-size: 19px;
     border-style: none;
     border-radius: 5px;
@@ -128,7 +74,7 @@ nav {
 
 // proses diagnosa
 input[type=text],
-select {
+select, input[type=password] {
     width: 100%;
     display: inline-block;
     padding: 12px 20px;
@@ -138,17 +84,11 @@ select {
     resize: vertical;
 }
 
-// .col-25 {
-//     float: left;
-//     width: 25%;
-//     margin-top: 6px;
-//   }
-
 
 .title-pd {
     font-weight: 700;
     margin-top: 20px;
-    color: #8FBF97;
+    color: $font-color;
     text-align: center;
 }
 
@@ -178,8 +118,8 @@ select {
 
 input[type=submit],
 input[type=reset] {
-    color: #01261C;
-    background-color: #8FBF97;
+    color: $font-color;
+    background-color: $bg-color;
     font-size: 14px;
     // margin: 0;
     // top: 50%;
@@ -215,7 +155,7 @@ input[type=reset] {
     background: rgba(1, 38, 28, 0.5179271024816176);
     margin: 7em 0 0 0 ;
     width: 35%;
-    color: #8FBF97;
+    color: $font-color;
 }
 
 .label-gejala {
@@ -239,7 +179,7 @@ input[type=checkbox] {
 }
 .h-pd-container {
     background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 100%), url('../images/gambar-4.jpg');
-    // display: block;
+    height: 100vh;
   padding: 40px;
 display: flex;
 justify-content: center;
@@ -295,4 +235,55 @@ a:hover {
     border-radius: 5px;
     padding: 10px 10px 10px 10px;    
     cursor: pointer;
+}
+
+// admin
+
+.p-admin-login {
+    color: #052941;
+    text-align: center ;
+}
+
+.h-pd-container-admin {
+    
+    background: linear-gradient(180deg, rgba(1, 0, 94, 0.24425763469450286), rgba(1, 38, 28, 0.6179271024816176)), url('../images/gambar-5.jpg');
+    height: 100vh;
+  padding: 40px;
+display: flex;
+justify-content: end;
+align-items: center;
+background-repeat: no-repeat;
+background-size: 705px 1080px;
+}
+
+.h-pd-content-admin {
+    border-radius: 10px;
+    background-color: $font-color;
+    width: 70%;
+    margin-top: 10vh;
+  padding: 40px 40px 60px 40px
+}
+
+.color-background {
+    background-color: #16443C;
+}
+
+.id {
+    color: #052941;
+}
+
+.h-pd-btn-admin {
+    width: 28%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;    
+    cursor: pointer;
+}
+
+// home-admin
+.home-admin-container {
+    background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 91%), url('../images/gambar-1.jpg');
+height: 100vh;
 }

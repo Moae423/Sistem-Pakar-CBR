@@ -4,38 +4,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<title>Sistem Pakar Penyakit Hipertensi </title>
-	<style type="text/css">
-		<!--
-		.style1 {
-			font-family: Georgia, "Times New Roman", Times, serif;
-			font-size: 12px;
-		}
-
-		.style2 {
-			font-family: Georgia, "Times New Roman", Times, serif;
-			font-size: 12px;
-		}
-	</style>
+	<link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-	
-	<h2>Dashboard Administrator</h2>
-	<div class="CSSTableGenerator">
-		<p>Selamat datang admin puskesmas padang luar!</p>
-		<p>
-			Sebagai seorang peduli akan hesehatan perlu mempunyai kewaspadaan yang tinggi terhadap penyakit yang mungkin
-			menjangkiti diri mereka ,Untuk itu, adanya Sistem Pakar Diagnosa Penyakit hipertensi yang menggunakan metode
-			Case Based Reasoning (CBR) dapat dijadikan salah satu solusi. Sistem ini mampu melakukan diagnosis penyakit
-			pasien dengan perhitungan yang akurat dan tepat.
-
-		</p>
-
+	<div class="home-admin-container">
+		<div class="card-dashboard">
+			<h1>Selamat Datang Admin</h1>
+		</div>
 	</div>
-	<table width="100%" height="25" align="center">
-		
-	</table>
-	
+
 </body>
 
 </html>

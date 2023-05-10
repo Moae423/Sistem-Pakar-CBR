@@ -6,25 +6,25 @@
   font-family: "Merriweather", serif;
 }
 
+label {
+  color: #D5D58D;
+}
+
 .judul {
   display: flex;
   align-items: center;
 }
 
-nav {
-  color: aqua;
-}
-
 .puskesmas {
   text-decoration: none;
   font-weight: 700;
-  color: #8FBF97;
+  color: #DBF226;
 }
 
 .nav-ateh {
   text-decoration: none;
   font-weight: 400;
-  color: #8FBF97;
+  color: #DBF226;
 }
 
 .container-content {
@@ -49,8 +49,8 @@ nav {
 }
 
 .btn-diagnosa {
-  color: #01261C;
-  background-color: #8FBF97;
+  color: #D5D58D;
+  background-color: #005B52;
   font-size: 19px;
   border-style: none;
   border-radius: 5px;
@@ -60,7 +60,7 @@ nav {
 }
 
 input[type=text],
-select {
+select, input[type=password] {
   width: 100%;
   display: inline-block;
   padding: 12px 20px;
@@ -73,7 +73,7 @@ select {
 .title-pd {
   font-weight: 700;
   margin-top: 20px;
-  color: #8FBF97;
+  color: #D5D58D;
   text-align: center;
 }
 
@@ -99,8 +99,8 @@ select {
 
 input[type=submit],
 input[type=reset] {
-  color: #01261C;
-  background-color: #8FBF97;
+  color: #D5D58D;
+  background-color: #005B52;
   font-size: 14px;
   border-style: none;
   border-radius: 5px;
@@ -131,7 +131,7 @@ input[type=reset] {
   background: rgba(1, 38, 28, 0.5179271025);
   margin: 7em 0 0 0;
   width: 35%;
-  color: #8FBF97;
+  color: #D5D58D;
 }
 
 .label-gejala {
@@ -154,6 +154,7 @@ input[type=checkbox] {
 
 .h-pd-container {
   background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-4.jpg");
+  height: 100vh;
   padding: 40px;
   display: flex;
   justify-content: center;
@@ -209,4 +210,51 @@ a:hover {
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
   cursor: pointer;
+}
+
+.p-admin-login {
+  color: #052941;
+  text-align: center;
+}
+
+.h-pd-container-admin {
+  background: linear-gradient(180deg, rgba(1, 0, 94, 0.2442576347), rgba(1, 38, 28, 0.6179271025)), url("../images/gambar-5.jpg");
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 705px 1080px;
+}
+
+.h-pd-content-admin {
+  border-radius: 10px;
+  background-color: #D5D58D;
+  width: 70%;
+  margin-top: 10vh;
+  padding: 40px 40px 60px 40px;
+}
+
+.color-background {
+  background-color: #16443C;
+}
+
+.id {
+  color: #052941;
+}
+
+.h-pd-btn-admin {
+  width: 28%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.home-admin-container {
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-1.jpg");
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */
