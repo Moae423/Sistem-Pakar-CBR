@@ -3,6 +3,9 @@
 $primary-color : #01261C;
 $second-color : #8FBF97;
 $third-color : #577D86;
+$nav-color : #DBF226
+$font-color : #D5D58D;
+$fs-color : #9FC131;
 
 * {
     box-sizing: border-box;
@@ -97,14 +100,14 @@ nav {
 }
 
 .hipertensi {
-    color: #8FBF97;
+    color: $font-color;
     margin-bottom: 10px;
     font-size: 5em;
     font-weight: bold;
 }
 
 .isi-hipertensi {
-    color: $third-color;
+    color: $fs-color;
     font-size: 24px;
     font-family: 'Merriweather', serif;
     text-align: center;
