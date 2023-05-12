@@ -8,12 +8,16 @@
 </head>
 
 <body>
-	<div class="home-admin-container">
-		<div class="card-dashboard">
-			<h1>Selamat Datang Admin</h1>
+	<div class="color-overlay"></div>
+	<div class="container-content">
+		<div class="hipertensi">Selamat Datang Administrator</div>
+		<div class="isi-hipertensi">
+			<p>Ini adalah tempat dimana untuk melihat data yang sudah diinputkan berupa data pasien, gejala, penyakit,
+				yang berhubungan dengan hipertensi
+			</p>
 		</div>
+		</a>
 	</div>
-
 </body>
 
 </html>

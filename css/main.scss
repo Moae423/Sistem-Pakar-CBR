@@ -14,9 +14,18 @@ $fs-color : #9FC131;
     font-family: 'Merriweather', serif;
     // background-color: #577D86;
 }
+.nav-bg {
+    background: linear-gradient(90deg, rgba(1, 38, 28, 0.7179271024816176) 8%, rgba(1, 38, 28, 0.84425763469450286) 91%);
 
+
+}
 label {
     color: $font-color;
+}
+
+.p-2 {
+    
+    border-radius: 20px;
 }
 .judul {
     display: flex;
@@ -207,7 +216,7 @@ background-size: cover;
 }
 
 a:link {
-    color: #005B52;
+    color: $nav-color;
     // background-color: transparent;
     text-decoration: none;
 }
@@ -286,4 +295,35 @@ background-size: 705px 1080px;
 .home-admin-container {
     background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 91%), url('../images/gambar-1.jpg');
 height: 100vh;
+}
+
+// penyakit dan solusi 
+.h-ps-container {
+    height: 100vh;
+  padding: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: cover;
+}
+
+.ps-title{
+    
+    padding: 3em;
+    font-weight: 900;
+    color: #D6D58E;
+}
+
+.table-title {
+   color: #D6D58E;
+
+}
+
+.table-isi {
+    color: $fs-color;
+}
+
+.background {
+    background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 100%), url('../images/gambar-4.jpg');
+
 }

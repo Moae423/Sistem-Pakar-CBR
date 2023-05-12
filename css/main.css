@@ -6,8 +6,16 @@
   font-family: "Merriweather", serif;
 }
 
+.nav-bg {
+  background: linear-gradient(90deg, rgba(1, 38, 28, 0.7179271025) 8%, rgba(1, 38, 28, 0.8442576347) 91%);
+}
+
 label {
   color: #D5D58D;
+}
+
+.p-2 {
+  border-radius: 20px;
 }
 
 .judul {
@@ -182,7 +190,7 @@ input[type=checkbox] {
 }
 
 a:link {
-  color: #005B52;
+  color: #DBF226;
   text-decoration: none;
 }
 
@@ -257,4 +265,31 @@ a:hover {
 .home-admin-container {
   background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 91%), url("../images/gambar-1.jpg");
   height: 100vh;
+}
+
+.h-ps-container {
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.ps-title {
+  padding: 3em;
+  font-weight: 900;
+  color: #D6D58E;
+}
+
+.table-title {
+  color: #D6D58E;
+}
+
+.table-isi {
+  color: #9FC131;
+}
+
+.background {
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-4.jpg");
 }/*# sourceMappingURL=main.css.map */

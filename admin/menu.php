@@ -1,38 +1,8 @@
-<!-- <ul class="art-hmenu">
-	<li>
-		<a href="haladmin.php?top=home.php"><span class="l"></span><span class="r"></span><span
-				class="t">Home</span></a>
-	</li>
-	<li>
-		<a href="haladmin.php?top=penyakit_solusi.php"><span class="l"></span><span class="r"></span><span
-				class="t">Penyakit & Solusi </span></a>
-	</li>
-	<li>
-		<a href="haladmin.php?top=gejala.php"><span class="l"></span><span class="r"></span><span
-				class="t">Gejala</span></a>
-	</li>
-	<li>
-		<a href="haladmin.php?top=relasi.php"><span class="l"></span><span class="r"></span><span
-				class="t">Relasi</span></a>
-	</li>
-	<li>
-		<a href="haladmin.php?top=lapgejala.php"><span class="l"></span><span class="r"></span><span class="t">Laporan
-				Gejala</span></a>
-	</li>
-	<li>
-		<a href="haladmin.php?top=lapuser.php"><span class="l"></span><span class="r"></span><span class="t">Laporan
-				User</span></a>
-	</li>
-	<li>
-		<a href="logout.php"><span class="l"></span><span class="r"></span><span class="t">Logout</span></a>
-	</li>
-</ul> -->
-
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ">
+<nav class="nav-bg navbar  navbar-expand-lg navbar-dark p-md- ">
 	<div class="container">
 		<a class="puskesmas fs-2" href="#">
 			<img src="../admin\image\logo-puskesmas.png" width="30" height="30" class="d-inline-block align-text-top" />
-			<a href="index.php?top=home.php	" class="puskesmas fs-2">
+			<a href="index.php?top=home.php	" class="puskesmas fs-1">
 				Puskesmas Padang Luar
 			</a>
 		</a>
@@ -42,7 +12,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<div class="mx-auto"></div>
-			<ul class="navbar-nav fs-4 gap-5">
+			<ul class="navbar-nav fs-5 gap-5">
 				<li class="nav-item">
 					<a href="haladmin.php?top=home.php" class="nav-ateh">Home</a>
 				</li>
