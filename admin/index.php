@@ -37,9 +37,9 @@
       <form name="form1" method="post" onSubmit="return validasi(this)" action="cekpswd.php">
         <div class="h-pd-content-admin">
           <h1 class="p-admin-login mt-2 fw-bolder">Login Admin Puskesmas Padang Luar</h1>
-          <label for="" class="id fs-3 text-bold">username</label>
+          <label for="" class="id fs-3 text-bold">Username</label>
           <input name="username" type="text" id="username" placeholder="Masukkan Username Anda!"><br>
-          <label for="password" class="id fs-3">password</label>
+          <label for="password" class="id fs-3">Password</label>
           <input name="password" type="password" id="password" placeholder="Masukkan Password  Anda!"><br>
           <div class="h-pd-btn-admin">
             <input type="submit" name="Submit" value="Login">
