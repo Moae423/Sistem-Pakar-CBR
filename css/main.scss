@@ -270,7 +270,7 @@ background-size: 705px 1080px;
     background-color: $font-color;
     width: 70%;
     margin-top: 10vh;
-  padding: 40px 40px 60px 40px
+  padding: 40px 40px 60px 40px;
 }
 
 .color-background {
@@ -324,7 +324,7 @@ background-size: cover;
 }
 
 .background {
-    height: 100vh;
+    height: 100vh;  
     background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271024816176) 0%, rgba(1, 0, 94, 0.44425763469450286) 100%), url('../images/gambar-4.jpg');
 
 }
@@ -348,7 +348,8 @@ background-size: cover;
     // margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
-    width: 30%;
+    width: 40%;
+    padding: 40px 40px 60px 40px;
     color: #8FBF97;
 }
 
@@ -364,4 +365,23 @@ background-size: cover;
     border-radius: 5px;
     padding: 10px 10px;
     cursor: pointer;
+}
+
+.btn-kembali {
+    color: $font-color;
+    background-color: #005B52;
+    font-size: 19px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.h-lg2-container {
+    height: 40vh;
+    padding: 30px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }

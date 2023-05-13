@@ -17,14 +17,14 @@ $sakit = $datap['nama_penyakit'];
 
 <body>
   <div class="background">
-    <div class="h-lg-content">
-      <div class="h-lg-container gap-5">
+    <div class="h-ps-container">
+      <div class="h-lg-content">
         <div align="left" style=" width:650;"><b>Nama Penyakit :
             <?php echo $sakit ?>
           </b>
         </div>
         <br>
-        <table width="650" border="0" align="left" cellpadding="2" cellspacing="1" bgcolor="#99CC99">
+        <table width="456" border="0" align="left" cellpadding="2" cellspacing="1" bgcolor="#99CC99">
           <tr bgcolor="#CCCC99">
             <td colspan="3"><b>Daftar Gejala Per Penyakit</b> <br>
               <br>
@@ -63,7 +63,10 @@ $sakit = $datap['nama_penyakit'];
             </td>
           </tr>
         </table>
-        <div align="right"><a href="haladmin.php?top=LapGejala.php">Kembali</a></div>
+        <a href="haladmin.php?top=LapGejala.php">
+          <button class="btn-kembali">
+            Kembali
+        </a>
       </div>
     </div>
 </body>
