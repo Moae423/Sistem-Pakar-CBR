@@ -269,7 +269,7 @@ a:hover {
 
 .h-ps-container {
   height: 100vh;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,5 +291,40 @@ a:hover {
 }
 
 .background {
+  height: 100vh;
   background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-4.jpg");
+}
+
+.h-lg-container {
+  height: 40vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.h-lg-content {
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 2em;
+  background: rgba(1, 38, 28, 0.5179271025);
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+  color: #8FBF97;
+}
+
+.btn-tampil {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #D5D58D;
+  background-color: #005B52;
+  font-size: 19px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

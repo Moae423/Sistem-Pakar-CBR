@@ -65,7 +65,7 @@
       </form>
       <div class="CSSTableGenerator">
         <table class="p-2" width="100%" border="1" align="center" cellpadding="3" cellspacing="0">
-          <tr class="table-title" bgcolor="#577D86" align="center">
+          <tr class="table-title" bgcolor="#005B52" align="center">
             <td width="85"><strong>Kode Gejala</strong></td>
             <td width="505"><strong>Gejala</strong></td>
             <td width="50"><strong>Edit</strong></td>
