@@ -1,40 +1,66 @@
-<h2>Daftar Penyakit Hipertensi </h2>
-<table width="95%" border="0" align="center" cellpadding="2" cellspacing="1" bgcolor="#22B5DD">
-  <td colspan="4"><b>Daftar Penyakit Hipertensi</b></td>
+<!DOCTYPE html>
+<html lang="en">
 
-  <tr bgcolor="#DBEAF5">
-    <td width="23" bgcolor="#CCCC99"><b>No</b></td>
-    <td width="244" bgcolor="#CCCC99"><strong>Deskripsi Penyakit</strong></td>
-  </tr>
-  <?php
-  $sql = "SELECT * FROM penyakit_solusi ORDER BY kd_penyakit";
-  $qry = mysqli_query($koneksi, $sql) or die("SQL Error" . mysqli_error($koneksi));
-  $no = 0;
-  while ($data = mysqli_fetch_array($qry)) {
-    $no++;
-    ?>
-    <tr bgcolor="#FFFFFF">
-      <td>
-        <div align="center">
-          <?php echo $no; ?>
-        </div>
-      </td>
-      <td>
-        <div align="left">
-          <div align="left">
-            <?php echo "<h3><em>$data[nama_penyakit]</em></h3>"; ?>
-          </div>
-          <ul>
-            <li><label>Definisi Penyakit :</label>
-              <p>
-                <?php echo "$data[definisi]"; ?>
-              </p>
-            </li>
-            <li><label>Solusi :</label>
-              <p>
-                <?php echo "$data[solusi]"; ?>
-              </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>Daftar Penyakit</title>
+</head>
 
-              <?php
-  }
-  ?>
+<body>
+  <div class="background">
+    <h1 class="title">Daftar Penyakit</h1>
+    <div class="container">
+      <div class="card-penyakit-1">
+        <h2 class="name-penyakit">Hipertensi Ringan</h2>
+        <p class="deskripsi">
+          Dikatakan tekanan darah tinggi ringan jika pada
+          saat duduk tekanan sistolik mencapai kurang dari 120 mmHg atau
+          lebih, atau tekanan diastolik mencapai 80 mmHg atau lebih, atau
+          biasanya tekanan darah tinggi ringan tidak memiliki gejala
+          <br />
+          <br>
+          <span class="solusi"> Solusi :</span>
+          <br>
+          Pengobatan dapat dilakukan dengan memberikan Diuretik,
+          Kalsium antagonis, ACE inhibitor,
+        </p>
+      </div>
+      <div class="card-penyakit-1">
+        <h2 class="name-penyakit">Hipertensi Sedang</h2>
+        <p class="deskripsi">
+          Dikatakan tekanan darah tinggi ringan jika pada
+          saat duduk tekanan sistolik mencapai kurang dari 120 mmHg atau
+          lebih, atau tekanan diastolik mencapai 80 mmHg atau lebih, atau
+          biasanya tekanan darah tinggi ringan tidak memiliki gejala
+          <br />
+          <br>
+          <span class="solusi"> Solusi :</span>
+          <br>
+          Pengobatan dapat dilakukan dengan memberikan Diuretik,
+          Kalsium antagonis, ACE inhibitor,
+        </p>
+      </div>
+      <div class="card-penyakit-1">
+        <h2 class="name-penyakit">Hipertensi Berat</h2>
+        <p class="deskripsi">
+          Dikatakan tekanan darah tinggi ringan jika pada
+          saat duduk tekanan sistolik mencapai kurang dari 120 mmHg atau
+          lebih, atau tekanan diastolik mencapai 80 mmHg atau lebih, atau
+          biasanya tekanan darah tinggi ringan tidak memiliki gejala
+          <br />
+          <br>
+          <span class="solusi"> Solusi :</span>
+          <br>
+          Pengobatan dapat dilakukan dengan memberikan Diuretik,
+          Kalsium antagonis, ACE inhibitor,
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

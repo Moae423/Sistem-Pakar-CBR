@@ -69,6 +69,7 @@ $sakit = $datap['nama_penyakit'];
         </a>
       </div>
     </div>
+  </div>
 </body>
 
 </html>

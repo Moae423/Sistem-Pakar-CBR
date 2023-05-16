@@ -347,4 +347,94 @@ a:hover {
   justify-content: center;
   align-items: center;
   background-size: cover;
+}
+
+.h-dp-container {
+  background: linear-gradient(108deg, rgb(1, 38, 28) 0%, rgba(1, 0, 94, 0.1442576347) 100%), url("../images/gambar-4.jpg");
+  height: 120vh;
+  padding: 30px;
+}
+
+.h-dp-content {
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 10px;
+  display: block;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  width: 50%;
+  padding: 50px;
+  color: #8FBF97;
+}
+
+.dp-p-title {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #DBF226;
+}
+
+.title-container {
+  font-weight: 700;
+  font-size: 24;
+  text-align: center;
+  color: #D5D58D;
+  margin-bottom: 20px;
+}
+
+.dp-p-definisi {
+  color: #D5D58D;
+}
+
+.dp-p-solusi {
+  color: #D5D58D;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.background {
+  background: linear-gradient(108deg, rgba(1, 38, 28, 0.7179271025) 0%, rgba(1, 0, 94, 0.4442576347) 100%), url("../images/gambar-1.jpg");
+  height: 120vh;
+}
+
+.container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.card-penyakit-1 {
+  border-radius: 10px;
+  background: rgba(1, 38, 28, 0.5179271025);
+  padding: 30px;
+}
+
+.title {
+  color: #D5D58D;
+  padding: 110px;
+}
+
+.name-penyakit {
+  font-weight: bolder;
+  color: #DBF226;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.deskripsi {
+  font-size: 20px;
+  color: #D5D58D;
+}
+
+.solusi {
+  color: #DBF226;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
